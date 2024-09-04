@@ -6,15 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class WoodCollection2 : MonoBehaviour
 {
-    public int Wood = 0;
+    public int Wood2 = 0;
     public TextMeshProUGUI woodtext;
 
-    // المرجع لسكربت CoinCollection
+   
     private CoinCollection coinCollection;
 
     private void Start()
     {
-        // العثور على سكربت CoinCollection الموجود على نفس GameObject أو أي كائن آخر
+        
         coinCollection = FindObjectOfType<CoinCollection>();
     }
 
@@ -22,8 +22,8 @@ public class WoodCollection2 : MonoBehaviour
     {
         if (other.transform.tag == "Wood")
         {
-            Wood++;
-            woodtext.text = Wood.ToString() + " /15";
+            Wood2++;
+            woodtext.text = Wood2.ToString() + " /15";
 
             Destroy(other.gameObject);
         }
@@ -31,8 +31,8 @@ public class WoodCollection2 : MonoBehaviour
 
     private void Update()
     {
-        
-        if ( coinCollection.Coin == 20 && Wood == 15)
+
+        if (coinCollection.Coin == 20 && Wood2 == 15)
         {
             SceneManager.LoadSceneAsync(6);
         }
