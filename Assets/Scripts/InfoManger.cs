@@ -16,7 +16,5 @@ public class InfoManger : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
-    public void mainmneu() { 
-        SceneManager.LoadSceneAsync(0);
-    }
+    
 }
