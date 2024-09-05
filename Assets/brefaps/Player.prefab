@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 5490231644803548159}
   - component: {fileID: 4792723515094190752}
   - component: {fileID: 1940722474731101770}
-  - component: {fileID: 7752715017852048245}
   - component: {fileID: 5062120945750852231}
-  - component: {fileID: 7064533010352767957}
   - component: {fileID: 5226000451388108938}
+  - component: {fileID: 6247672039851999829}
   - component: {fileID: 8347743702941559942}
   m_Layer: 0
   m_Name: Player
@@ -31,7 +30,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3787788884503125541}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.52, y: 1.74, z: -16.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -39,6 +37,7 @@ Transform:
   m_Children:
   - {fileID: 4406312095518379298}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5490231644803548159
 MeshFilter:
@@ -98,35 +97,12 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3787788884503125541}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7752715017852048245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3787788884503125541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15a41b9f12b62564b81eab9b6431b978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Coin: 0
-  coinText: {fileID: 0}
 --- !u!114 &5062120945750852231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,20 +117,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.5
   touchSensitivity: 0.5
---- !u!114 &7064533010352767957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3787788884503125541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9afa3fd3c70e734b97e01ae75531aa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Wood2: 0
-  woodtext: {fileID: 0}
 --- !u!114 &5226000451388108938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +131,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
   remainingaTime: 60
+--- !u!114 &6247672039851999829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3787788884503125541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b17c7b6c458a13844ae7be0badd100e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Coin: 0
+  coinText: {fileID: 0}
 --- !u!54 &8347743702941559942
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -176,21 +152,10 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3787788884503125541}
-  serializedVersion: 4
+  serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -201,7 +166,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 6490703773704852440}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 49054069c6a40b245ace4e5123c5144f, type: 3}
@@ -265,9 +229,6 @@ PrefabInstance:
       value: FKNshmag
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49054069c6a40b245ace4e5123c5144f, type: 3}
 --- !u!4 &4406312095518379298 stripped
 Transform:

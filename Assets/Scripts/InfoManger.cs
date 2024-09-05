@@ -16,5 +16,6 @@ public class InfoManger : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(0);
     }
+
     
 }
